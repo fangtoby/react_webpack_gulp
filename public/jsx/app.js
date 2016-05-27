@@ -14,7 +14,7 @@ let FrameHandler = React.createClass({
                 <div className="bodyFrame">
                     <SearchHandler butsName="Chnage State" source="https://api.github.com/users/octocat/gists" />
                     <SearchHandler butsName="Chnage Again" source="https://api.github.com/users/octocat/gists" />
-                    <HelloHandler name="app-modules" data={names} />
+                    <HelloHandler name="app-modules" data={names} source="https://api.github.com/users/octocat/gists" />
                 </div>
             );
         }

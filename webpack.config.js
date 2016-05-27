@@ -20,7 +20,8 @@ module.exports = {
             minChunks:2
         }),
         new webpack.ProvidePlugin({
-            $:'jquery'
+            $:'jquery',
+            _:'lodash'
         })
     ],
     module: {

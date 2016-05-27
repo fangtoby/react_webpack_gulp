@@ -43,10 +43,13 @@ let SearchBox = React.createClass({
      * 组件已经加载到dom [ only ones ]
      */
     componentDidMount: function () {
-        $.get(this.props.source, function(result) {
-            console.log(result);
-
-        }.bind(this));
+        /**
+         * 调用第三方库 $
+         */
+        // $.get(this.props.source, function(result) {
+        //     console.log(result);
+        //
+        // }.bind(this));
     },
     /**
      * 组件将被卸载 [ only ones ]

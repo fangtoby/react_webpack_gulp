@@ -4,16 +4,25 @@
 import React from 'react';
 
 let ProductBox = React.createClass({
-  render: function () {
-    return (
-      <div className="productBox" data-name={this.props.name} >
-          {
-              this.props.data.map(function (object, i) {
-                    return <div  key={i}>Hello {object.name}!</div>
-              })
-          }
-      </div>
-    );
-  }
+    /**
+     * 组件已经加载到dom [ only ones ]
+     */
+    componentDidMount: function () {
+    },
+    render: function () {
+        /**
+         * 调用第三方库 lodash _
+         */
+        // let tempstr = _.join(['a', 'b', 'c'], '~');
+        return (
+            <div className="productBox" data-name={this.props.name} >
+                {
+                    this.props.data.map(function (object, i) {
+                        return <div  key={i}>Hello {object.name}!</div>
+                    })
+                }
+            </div>
+        );
+    }
 });
 export default ProductBox;
