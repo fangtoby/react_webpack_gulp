@@ -12,15 +12,15 @@ webpackJsonp([1],{
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactDom = __webpack_require__(/*! react-dom */ 54);
+	var _reactDom = __webpack_require__(/*! react-dom */ 52);
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _hello = __webpack_require__(/*! ./modules/hello */ 90);
+	var _hello = __webpack_require__(/*! ./modules/hello */ 87);
 	
 	var _hello2 = _interopRequireDefault(_hello);
 	
-	var _search = __webpack_require__(/*! ./modules/search */ 173);
+	var _search = __webpack_require__(/*! ./modules/search */ 169);
 	
 	var _search2 = _interopRequireDefault(_search);
 	
@@ -45,13 +45,13 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 173:
+/***/ 169:
 /*!**************************************!*\
   !*** ./public/jsx/modules/search.js ***!
   \**************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function($) {'use strict';
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
@@ -102,9 +102,13 @@ webpackJsonp([1],{
 	     * 组件已经加载到dom [ only ones ]
 	     */
 	    componentDidMount: function componentDidMount() {
-	        $.get(this.props.source, function (result) {
-	            console.log(result);
-	        }.bind(this));
+	        /**
+	         * 调用第三方库 $
+	         */
+	        // $.get(this.props.source, function(result) {
+	        //     console.log(result);
+	        //
+	        // }.bind(this));
 	    },
 	    /**
 	     * 组件将被卸载 [ only ones ]
@@ -133,7 +137,6 @@ webpackJsonp([1],{
 	
 	
 	exports.default = SearchBox;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! jquery */ 52)))
 
 /***/ }
 

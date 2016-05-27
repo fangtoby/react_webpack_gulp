@@ -11,11 +11,11 @@ webpackJsonp([2],[
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactDom = __webpack_require__(/*! react-dom */ 54);
+	var _reactDom = __webpack_require__(/*! react-dom */ 52);
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _hello = __webpack_require__(/*! ../modules/hello.js */ 90);
+	var _hello = __webpack_require__(/*! ../modules/hello.js */ 87);
 	
 	var _hello2 = _interopRequireDefault(_hello);
 	
